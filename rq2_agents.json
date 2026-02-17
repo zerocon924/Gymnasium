@@ -1,0 +1,31 @@
+{
+  "_注释_proxy": "代理设置说明: 'http://127.0.0.1:7890' = ClashX 默认端口; 'none' = 禁用代理直连; 删除此字段 = 使用系统默认",
+  "proxy": "none",
+
+  "agents": [
+    {
+      "name": "矿工A-GPT4oMini",
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "api_key": "sk-MaceGMjJ4hn2IxZh8sYWPLo4qrK7lRVZGlUYDjEDKIVThJEU",
+      "base_url": "https://yinli.one/v1"
+    },
+    {
+      "name": "矿工B-Claude",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-5-20250929",
+      "api_key": "sk-czneqrfzDSoy6Uo8i3alGe9JYp9ZWvHH8KFtRRhLNQmC1DD1",
+      "base_url": "https://yinli.one"
+    },
+    {
+      "name": "矿工C-GPT4o",
+      "provider": "openai",
+      "model": "gpt-4o",
+      "api_key": "sk-MaceGMjJ4hn2IxZh8sYWPLo4qrK7lRVZGlUYDjEDKIVThJEU",
+      "base_url": "https://yinli.one/v1"
+    }
+  ],
+  "alpha": [0.25, 0.20, 0.15],
+  "honest_power": 0.40,
+  "rounds": 30
+}

@@ -172,6 +172,29 @@ register(
 )
 
 
+# Blockchain CPD
+# ----------------------------------------
+
+register(
+    id="BlockchainCPD-v0",
+    entry_point="gymnasium.envs.blockchain.cpd_env:BlockchainCPDEnv",
+    max_episode_steps=100,
+)
+
+register(
+    id="BlockchainCPD-v0-TFT",
+    entry_point="gymnasium.envs.blockchain.cpd_env:BlockchainCPDEnv",
+    kwargs={"opponent_policy": "tit_for_tat"},
+    max_episode_steps=100,
+)
+
+register(
+    id="BlockchainCPD-v0-Random",
+    entry_point="gymnasium.envs.blockchain.cpd_env:BlockchainCPDEnv",
+    kwargs={"opponent_policy": "random"},
+    max_episode_steps=100,
+)
+
 # Tabular
 # ----------------------------------------
 
